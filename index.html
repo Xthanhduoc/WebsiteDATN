@@ -193,22 +193,34 @@ header {
   }
 }
 
-
 /* Tùy chỉnh riêng cho cụm CTA */
+.mobile-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* đẩy 2 nút ra xa nhau */
+  gap: 16px; /* khoảng cách tối thiểu giữa 2 nút */
+}
+
 .mobile-cta a {
+  flex: 1; /* cho 2 nút có chiều rộng đều nhau */
   text-align: center;
   font-size: 16px;
   padding: 14px 18px;
 }
 
-/* Trên mobile, nút xếp dọc */
+/* Trên mobile, nút xếp dọc full chiều ngang */
 @media(max-width: 719px) {
   .mobile-cta {
-    display: flex;
     flex-direction: column;
     gap: 10px;
   }
+
+  .mobile-cta a {
+    flex: none; 
+    width: 100%; /* full chiều rộng màn hình */
+  }
 }
+
 
 
 
