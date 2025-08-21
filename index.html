@@ -160,8 +160,7 @@ header {
   input,textarea{
     width:100%;padding:12px;border-radius:12px;border:var(--bd);background:#0f1419;color:var(--txt)
   }
-
-  /* Responsive cho mobile */
+/* Responsive cho mobile */
 @media(max-width: 719px) {
   .hero .grid {
     grid-template-columns: 1fr; /* 1 cột thay vì 2 */
@@ -194,6 +193,14 @@ header {
 }
 
 /* Tùy chỉnh riêng cho cụm CTA */
+.cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center; /* căn giữa 2 nút trên desktop */
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
 .mobile-cta {
   display: flex;
   flex-wrap: wrap;
@@ -220,6 +227,7 @@ header {
     width: 100%; /* full chiều rộng màn hình */
   }
 }
+
 
 
 
