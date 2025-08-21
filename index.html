@@ -161,7 +161,8 @@ header {
     width:100%;padding:12px;border-radius:12px;border:var(--bd);background:#0f1419;color:var(--txt)
   }
 
- /* Responsive cho mobile */
+  
+/* Responsive cho mobile */
 @media(max-width: 719px) {
   .hero .grid {
     grid-template-columns: 1fr; /* 1 cột thay vì 2 */
@@ -205,31 +206,29 @@ header {
 .mobile-cta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* ✅ desktop: căn giữa */
-  gap: 16px;
+  justify-content: space-between; /* đẩy 2 nút ra xa nhau */
+  gap: 16px; /* khoảng cách tối thiểu giữa 2 nút */
 }
 
 .mobile-cta a {
-  flex: none;
+  flex: 1; /* cho 2 nút có chiều rộng đều nhau */
   text-align: center;
   font-size: 16px;
   padding: 14px 18px;
 }
 
-/* Trên mobile, nút xếp dọc nhưng vẫn căn giữa */
+/* Trên mobile, nút xếp dọc full chiều ngang */
 @media(max-width: 719px) {
   .mobile-cta {
     flex-direction: column;
-    align-items: center; /* căn giữa theo trục ngang */
     gap: 10px;
   }
 
   .mobile-cta a {
-    width: auto;        /* nút chỉ rộng theo nội dung */
-    max-width: 320px;   /* không vượt quá 320px */
+    flex: none; 
+    width: 100%; /* full chiều rộng màn hình */
   }
 }
-
 
 
 
