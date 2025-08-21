@@ -220,13 +220,13 @@ header {
 @media(max-width: 719px) {
   .mobile-cta {
     flex-direction: column;
-    align-items: center; /* ✅ căn giữa theo trục ngang */
+    align-items: center; /* căn giữa theo trục ngang */
     gap: 10px;
   }
 
   .mobile-cta a {
-    width: 100%; 
-    max-width: 320px; /* ✅ tránh kéo full màn hình, giữ đẹp */
+    width: auto;        /* nút chỉ rộng theo nội dung */
+    max-width: 320px;   /* không vượt quá 320px */
   }
 }
 
